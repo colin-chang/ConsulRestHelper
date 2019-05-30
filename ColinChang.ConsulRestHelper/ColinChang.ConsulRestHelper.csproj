@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Copyright>https://colin-chang.site</Copyright>
+        <PackageProjectUrl>https://github.com/colin-chang/ConsulRestHelper/tree/master</PackageProjectUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageIconUrl>https://raw.githubusercontent.com/colin-chang/ConsulRestHelper/master/logo.ico</PackageIconUrl>
+        <RepositoryUrl>https://github.com/colin-chang/ConsulRestHelper/tree/master</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Consul,consul,ConsulHelper,RestTemplate</PackageTags>
+        <Description>This is a utility can help you to send web requests to services registered to Consul.Like RestTemplate in Spring Cloud for Java.
+
+It has some functions below.
+1. Service discovery.
+
+    It can transfer virtual service request to a real instance service request.Like "http://ProductService/api/product/" =&gt; "http://192.168.1.10:8080/api/product/".
+
+2. Load balancing
+
+    By default,we use the milliseconds elapsed since the system started to mocke up the total count of services registered to consul to get one of the service instance.
+
+    ```csharp
+    services.ElementAt(Environment.TickCount % services.Count());
+    ```
+
+3. Rest Request
+    
+    sending Get/Post/Put/Delete web requests to services registered in consul.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Consul" Version="0.7.2.6" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\LICENSE">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+    </ItemGroup>
+
+</Project>
