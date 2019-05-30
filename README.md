@@ -4,7 +4,8 @@ This is a utility can help you to send web requests to services registered to Co
 It has some functions below.
 1. Service discovery.
 
-    It can transfer virtual service request to a real instance service request.Like "http://ProductService/api/product/" => "http://192.168.1.10:8080/api/product/".
+    It can transfer virtual service request to a real instance service request.
+    Example: "http://ProductService/api/product/" => "http://192.168.1.10:8080/api/product/".
 
 2. Load balancing
 
@@ -21,7 +22,7 @@ It has some functions below.
 
 > Documents
 
-* http://localhost:4000/pages/microservice-consul.html
+* https://colin-chang.site/netcore/pages/microservice-consul.html
 
 > [Nuget](https://www.nuget.org/packages/ColinChang.ConsulRestHelper/)
 
