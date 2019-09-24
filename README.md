@@ -22,7 +22,7 @@ It has some functions below.
 
 > Documents
 
-* https://colin-chang.site/netcore/pages/microservice-consul.html
+* https://netcore.colinchang.net/pages/microservice-consul.html
 
 > [Nuget](https://www.nuget.org/packages/ColinChang.ConsulRestHelper/)
 
