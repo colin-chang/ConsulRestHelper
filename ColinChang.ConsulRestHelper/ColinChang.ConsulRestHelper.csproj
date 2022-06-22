@@ -31,7 +31,7 @@ It has some functions below.
 
     <ItemGroup>
       <PackageReference Include="Consul" Version="0.7.2.6" />
-      <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     </ItemGroup>
 
     <ItemGroup>
